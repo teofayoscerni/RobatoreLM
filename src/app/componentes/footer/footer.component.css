@@ -1,13 +1,5 @@
-.bg-pink{
-  background-color: #e03d84;
-}
 .bg-green{
   background-color: #4BE8DE;
-}
-.txt-pink{
-  color:#e03d84;
-  font-weight: bold;
-  font-size:x-small;
 }
 .txt-green{
   color: #4BE8DE;
@@ -20,3 +12,13 @@
 body {
   background-color: #9CAF88;
 }
+
+/* Revertir el cambio de posición fija del footer */
+/* Eliminar las propiedades de posición fija del footer */
+footer {
+  width: 100%;
+  z-index: 10;
+}
+
+/* Eliminar referencias al color rosa */
+/* Eliminado el fondo y texto rosa */

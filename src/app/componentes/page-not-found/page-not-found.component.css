@@ -1,20 +1,9 @@
-.bg-pink{
-  background-color: #e03d84;
-}
 .bg-green{
   background-color: #4BE8DE;
-}
-.txt-pink{
-  color:#e03d84;
-  font-weight: bold;
 }
 .txt-green{
   color: #4BE8DE;
   font-weight: bold;
-}
-.activelink{
-  color:#e03d84;
-  border-bottom: #e03d84 2px solid;
 }
 .activelinkhome{
   background-color:black;
@@ -25,3 +14,6 @@
 body {
   background-color: #9CAF88;
 }
+
+/* Eliminar referencias al color rosa */
+/* Eliminado el fondo, texto y bordes rosas */
