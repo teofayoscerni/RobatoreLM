@@ -15,3 +15,8 @@
   font-size: smaller;
 
 }
+
+/* Aplicar el mismo fondo que About Us */
+body {
+  background-color: #9CAF88;
+}

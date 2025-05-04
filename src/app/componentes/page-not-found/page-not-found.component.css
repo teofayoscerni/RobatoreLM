@@ -20,3 +20,8 @@
   background-color:black;
   border-bottom: #e03d84 2px solid;
 }
+
+/* Aplicar el mismo fondo que About Us */
+body {
+  background-color: #9CAF88;
+}

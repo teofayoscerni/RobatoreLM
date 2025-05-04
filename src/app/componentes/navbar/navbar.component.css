@@ -1,14 +1,32 @@
-.bg-pink{
+.bg-pink {
   background-color: #e03d84;
 }
-.bg-green{
+
+.bg-green {
   background-color: #4BE8DE;
 }
-.txt-pink{
-  color:#e03d84;
+
+.txt-pink {
+  color: #e03d84;
   font-weight: bold;
+  font-size: x-small;
 }
-.txt-green{
+
+.txt-green {
   color: #4BE8DE;
   font-weight: bold;
+  font-size: smaller;
+}
+
+.navbar-title {
+  font-size: 1.5rem; /* Tamaño más pequeño */
+  color: #007a33; /* Color similar al footer */
+  font-family: 'Klarissa', Arial, sans-serif; /* Fuente del footer */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Aplicar el mismo fondo que About Us */
+body {
+  background-color: #9CAF88;
 }

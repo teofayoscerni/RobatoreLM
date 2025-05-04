@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Forzar el fondo global para que se aplique en todas las páginas */
+body {
+  background-color: #9CAF88 !important; /* Fondo de About Us */
+}

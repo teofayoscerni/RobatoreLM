@@ -1,8 +1,12 @@
-
 .bg-pink{
   background-color: #e03d84;
 }
 .txt-green{
   color: #4BE8DE;
   font-weight: bold;
+}
+
+/* Aplicar el mismo fondo que About Us */
+body {
+  background-color: #9CAF88;
 }
