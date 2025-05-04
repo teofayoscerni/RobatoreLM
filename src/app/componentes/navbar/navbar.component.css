@@ -15,6 +15,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
+  margin-right: 20px; /* Reducir el margen izquierdo */
 }
 
 /* Cambiar el color de fondo del navbar al color arenoso del footer */
@@ -28,6 +29,16 @@
 /* Cambiar el color del texto del navbar */
 .navbar .nav-link {
   color: black !important; /* Todo el texto excepto el título principal será negro */
+}
+
+/* Cambiar el estilo del enlace activo en el navbar para que no se subraye y tenga el color del fondo de la página */
+.nav-link.active {
+  text-decoration: none;
+  font-weight: bold;
+  color: #9CAF88 !important; /* Mismo color que el fondo de la página */
+  background-color: #9CAF88 !important; /* Fondo global */
+  color: white !important; /* Contraste para visibilidad */
+  border-radius: 5px; /* Opcional: para un diseño más atractivo */
 }
 
 /* Aplicar el mismo fondo que About Us */
