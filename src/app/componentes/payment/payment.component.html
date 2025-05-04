@@ -1,0 +1,72 @@
+
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+      <div class="card shadow p-4" style="width: 100%; max-width: 500px; border-radius: 20px;">
+        <h2 class="text-center mb-4">Formulario de Pago</h2>
+        
+         <form > <!--(ngSubmit)="onSubmit()" #paymentForm="ngForm" -->
+          <!-- Datos de Envío -->
+          <fieldset>
+            <legend class="text-center mb-3">Datos de Envío</legend>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control rounded-pill" id="name" name="name" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control rounded-pill" id="email" name="email" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control rounded-pill" id="address" name="address" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">Ciudad</label>
+              <input type="text" class="form-control rounded-pill" id="city" name="city" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="postalCode" class="form-label">Código Postal</label>
+              <input type="text" class="form-control rounded-pill" id="postalCode" name="postalCode" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control rounded-pill" id="phone" name="phone" ngModel required>
+            </div>
+          </fieldset>
+  
+          <hr>
+  
+          <!-- Método de Pago -->
+          <fieldset>
+            <legend class="text-center mb-3">Método de Pago</legend>
+            <div class="mb-3">
+              <label for="paymentMethod" class="form-label">Selecciona un método de pago</label>
+              <select class="form-select rounded-pill" id="paymentMethod" name="paymentMethod" ngModel required>
+                <option value="creditCard">Tarjeta de Crédito</option>
+                <option value="debitCard">Tarjeta de Débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="bankTransfer">Transferencia Bancaria</option>
+              </select>
+            </div>
+            <div > <!-- *ngIf="paymentForm.value.paymentMethod === 'creditCard' || paymentForm.value.paymentMethod === 'debitCard'" -->
+              <div class="mb-3">
+                <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                <input type="text" class="form-control rounded-pill" id="cardNumber" name="cardNumber" ngModel required>
+              </div>
+              <div class="mb-3">
+                <label for="expiryDate" class="form-label">Fecha de Expiración</label>
+                <input type="month" class="form-control rounded-pill" id="expiryDate" name="expiryDate" ngModel required>
+              </div>
+              <div class="mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control rounded-pill" id="cvv" name="cvv" ngModel required>
+              </div>
+            </div>
+          </fieldset>
+  
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary rounded-pill" >Proceder al Pago</button>
+            [disabled]="!paymentForm.valid"
+          </div>
+        </form>
+      </div>
+    </div>
