@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Forzar el fondo global para que se aplique en todas las páginas */
+/* Cambié el color del texto a negro */
+
+:root {
+  --color-secundario: #f0f8e2;
+}
+
 body {
-  background-color: #9CAF88 !important; /* Fondo de About Us */
+  background-color: var(--color-secundario);
+  color: #000000; /* Texto negro */
 }
